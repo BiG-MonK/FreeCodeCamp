@@ -18,7 +18,33 @@ $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=js
  $(".ETH").html(json.symbol.price_usd);
  //$("#test").html(Object.keys[1]);
 }); 
+/*
+$('#quoteGETJSON').click(function() {
+  $.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?")
+    .done(update)
+    .fail(handleErr);
+});
 
+$('#quoteAJAX').click(function() {
+  $.ajax({
+      url: "https://api.forismatic.com/api/1.0/",
+      jsonp: "jsonp",
+      dataType: "jsonp",
+      data: {
+        method: "getQuote",
+        lang: "en",
+        format: "jsonp"
+      }
+    })
+    .done(update)
+    .fail(handleErr);
+});
 
-//	var html = "<strong>" + "key" + "</strong>: " + "val" + "<br>";
-	//$("#test").html(html);
+function update(response) {
+  $('#log').prepend('<pre>' + $('#response').html() + '</pre>');
+  $('#response').html(JSON.stringify(response));
+}
+
+function handleErr(jqxhr, textStatus, err) {
+  console.log("Request Failed: " + textStatus + ", " + err);
+}*/
