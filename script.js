@@ -1,4 +1,5 @@
-$.getJSON("https://talaikis.com/api/quotes/random/", function(json) {
+$.getJSON("https://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=jsonp&jsonp=?", function(json) {
+//http://api.forismatic.com/api/1.0/?method=getQuote&lang=en&format=json", function(json) {
 	//var myStr = JSON.stringify(json);
   //myStr = JSON.parse(myStr);
   var html = "";
